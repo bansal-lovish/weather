@@ -1,0 +1,23 @@
+.main{
+    background-color: #2A629A;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.3rem;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+@media (max-width:600px) {
+.main{
+    display: block;
+    gap:1rem;
+}
+  .select-countries{
+    max-width: 150px;
+  }
+  .select-cities{
+    margin-top: 0.8rem;
+    max-width: 150px;
+  }
+}

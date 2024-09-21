@@ -1,0 +1,121 @@
+/* Global Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #f0f0f0;
+  }
+  
+  .main-view {
+    background-color: #2e5a8a;
+    color: white;
+    padding: 20px;
+  }
+  
+  .container {
+    background-color: #366797;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header img {
+    height: 20px;
+    width: 20px;
+  }
+  
+  .header-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .contentToday-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .contentToday-headone-img {
+    height: 60px;
+    width: 60px;
+  }
+  
+  .contentToday-headone-heading {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+  
+  .contentToday-headtwo-heading {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  
+  .main-head {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .weather {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+
+    
+  }
+  .weather-1{
+    background-color: #274869 ;
+    padding: 0.2rem;
+    align-items: center;
+  }
+  
+  @media (max-width: 600px) {
+    .header-sec {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .contentToday-head {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .contentToday-headone-img {
+      height: 40px;
+      width: 40px;
+    }
+  
+    .contentToday-headone-heading {
+      font-size: 1.5rem;
+    }
+  
+    .contentToday-headtwo-heading {
+      font-size: 1rem;
+    }
+  
+    .weather {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .main-head{
+        font-size: 1.2rem;
+        font-weight: 500;
+word-wrap: break-word;
+    }
+  }
+  
